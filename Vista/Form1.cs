@@ -21,5 +21,10 @@ namespace Sistema_de_gestion_de_productos
         {
             
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
