@@ -15,5 +15,7 @@ namespace Modelo.Dto
         public string Descripcion { get; set; }
         public int Categoria { get; set; }
         public bool Estado { get; set; }
+
+        
     }
 }

@@ -17,5 +17,9 @@ namespace Sistema_de_gestion_de_productos
             InitializeComponent();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
