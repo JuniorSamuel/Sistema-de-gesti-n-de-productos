@@ -46,7 +46,7 @@ namespace Sistema_de_gestion_de_productos
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(289, 205);
+            this.button1.Location = new System.Drawing.Point(300, 224);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 48);
             this.button1.TabIndex = 1;
