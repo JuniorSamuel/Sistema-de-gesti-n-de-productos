@@ -35,7 +35,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(312, 155);
+            this.label1.Location = new System.Drawing.Point(29, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 15);
             this.label1.TabIndex = 0;
@@ -45,7 +45,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(240, 138);
             this.Controls.Add(this.label1);
             this.Name = "Form3";
             this.Text = "Form3";

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sistema_de_gestion_de_productos.Vista;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,16 +18,7 @@ namespace Sistema_de_gestion_de_productos
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
             
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -54,15 +46,11 @@ namespace Sistema_de_gestion_de_productos
 
         private void panel1_MouseMove(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+
 
         }
+        
 
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         public void AbrirForm(Form f)
         {
@@ -71,15 +59,25 @@ namespace Sistema_de_gestion_de_productos
             f.Show();
             
         }
-
+        
         private void button1_Click_1(object sender, EventArgs e)
         {
+            Form2 Form2 = new Form2();
+            AbrirForm(Form2);
+            
             
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            Form4 Form4 = new Form4();
+            AbrirForm(Form4);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 Form3 = new Form3();
+            AbrirForm(Form3);
         }
     }
 

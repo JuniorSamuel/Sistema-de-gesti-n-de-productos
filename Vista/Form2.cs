@@ -17,6 +17,7 @@ namespace Sistema_de_gestion_de_productos.Vista
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            
 
         }
 

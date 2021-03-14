@@ -1150,19 +1150,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\upia9\\.nuget\\packages\\": {}
+    "C:\\Users\\Kerlin Liberato\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\upia9\\Source\\Repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\Sistema de gestion de productos.csproj",
+      "projectUniqueName": "C:\\Users\\Kerlin Liberato\\Source\\Repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\Sistema de gestion de productos.csproj",
       "projectName": "Sistema de gestion de productos",
-      "projectPath": "C:\\Users\\upia9\\Source\\Repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\Sistema de gestion de productos.csproj",
-      "packagesPath": "C:\\Users\\upia9\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\upia9\\Source\\Repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\obj\\",
+      "projectPath": "C:\\Users\\Kerlin Liberato\\Source\\Repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\Sistema de gestion de productos.csproj",
+      "packagesPath": "C:\\Users\\Kerlin Liberato\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kerlin Liberato\\Source\\Repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\upia9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kerlin Liberato\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
