@@ -28,3 +28,4 @@ C:\Users\upia9\Source\Repos\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp
 C:\Users\upia9\Source\Repos\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema de gestion de productos.dll
 C:\Users\upia9\Source\Repos\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema de gestion de productos.pdb
 C:\Users\upia9\Source\Repos\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema de gestion de productos.genruntimeconfig.cache
+C:\Users\upia9\Source\Repos\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema_de_gestion_de_productos.Properties.Resources.resources
