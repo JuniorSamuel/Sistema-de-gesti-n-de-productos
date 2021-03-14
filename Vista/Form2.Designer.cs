@@ -47,7 +47,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
-            this.ClientSize = new System.Drawing.Size(600, 410);
+            this.ClientSize = new System.Drawing.Size(715, 525);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -41,9 +41,14 @@ namespace Sistema_de_gestion_de_productos
         }
         private void panel1_MouseMove(object sender, MouseEventArgs e)
         {
-
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
 
         }
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
         public void AbrirForm(Form f)
         {
             if (this.panel3.Controls.Count > 0)
