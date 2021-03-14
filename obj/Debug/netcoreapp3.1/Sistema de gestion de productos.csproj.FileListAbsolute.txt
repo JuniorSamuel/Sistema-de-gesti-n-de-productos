@@ -29,3 +29,37 @@ C:\Users\upia9\Source\Repos\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp
 C:\Users\upia9\Source\Repos\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema de gestion de productos.pdb
 C:\Users\upia9\Source\Repos\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema de gestion de productos.genruntimeconfig.cache
 C:\Users\upia9\Source\Repos\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema_de_gestion_de_productos.Properties.Resources.resources
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\Sistema de gestion de productos.exe
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\Sistema de gestion de productos.deps.json
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\Sistema de gestion de productos.runtimeconfig.json
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\Sistema de gestion de productos.runtimeconfig.dev.json
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\Sistema de gestion de productos.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\Sistema de gestion de productos.pdb
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\System.Data.SQLite.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\System.Data.SQLite.EF6.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema de gestion de productos.csprojAssemblyReference.cache
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema_de_gestion_de_productos.Properties.Resources.resources
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema_de_gestion_de_productos.Form1.resources
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema_de_gestion_de_productos.Vista.Form2.resources
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema_de_gestion_de_productos.Vista.Form3.resources
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema_de_gestion_de_productos.Vista.Form4.resources
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema de gestion de productos.csproj.GenerateResource.cache
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema de gestion de productos.AssemblyInfoInputs.cache
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema de gestion de productos.AssemblyInfo.cs
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema de gestion de productos.csproj.CoreCompileInputs.cache
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema de gestion de productos.csproj.CopyComplete
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema de gestion de productos.dll
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema de gestion de productos.pdb
+C:\Users\upia9\Source\Repos\JuniorSamuel\Sistema-de-gesti-n-de-productos\obj\Debug\netcoreapp3.1\Sistema de gestion de productos.genruntimeconfig.cache

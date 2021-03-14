@@ -63,6 +63,24 @@ namespace Sistema_de_gestion_de_productos
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        public void AbrirForm(Form f)
+        {
+            f.TopLevel = false;
+            this.panel3.Controls.Add(f);
+            f.Show();
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 
 }
