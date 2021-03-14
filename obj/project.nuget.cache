@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jb3C0LMFLuG0LrcoWmbrUwGsj4YGS3LiauJIpB1QEce9S6QM81KnVuHXabrg7q98xCyznayGopKLqeK/npV/RA==",
+  "dgSpecHash": "XizXTDg+YLnL1/yTLzsrjpqle4526RoqEvEZYVkycJIwM/n5pn/WLa73ZE/uESXmksBLVfnGhv5X7giLSa2IEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\upia9\\Source\\Repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\Sistema de gestion de productos.csproj",
+  "projectFilePath": "C:\\Users\\upia9\\source\\repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\Sistema de gestion de productos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\upia9\\.nuget\\packages\\entityframework\\6.3.0\\entityframework.6.3.0.nupkg.sha512",
     "C:\\Users\\upia9\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",

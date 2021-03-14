@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\upia9\\Source\\Repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\Sistema de gestion de productos.csproj": {}
+    "C:\\Users\\upia9\\source\\repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\Sistema de gestion de productos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\upia9\\Source\\Repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\Sistema de gestion de productos.csproj": {
+    "C:\\Users\\upia9\\source\\repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\Sistema de gestion de productos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\upia9\\Source\\Repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\Sistema de gestion de productos.csproj",
+        "projectUniqueName": "C:\\Users\\upia9\\source\\repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\Sistema de gestion de productos.csproj",
         "projectName": "Sistema de gestion de productos",
-        "projectPath": "C:\\Users\\upia9\\Source\\Repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\Sistema de gestion de productos.csproj",
+        "projectPath": "C:\\Users\\upia9\\source\\repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\Sistema de gestion de productos.csproj",
         "packagesPath": "C:\\Users\\upia9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\upia9\\Source\\Repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\obj\\",
+        "outputPath": "C:\\Users\\upia9\\source\\repos\\JuniorSamuel\\Sistema-de-gesti-n-de-productos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\upia9\\AppData\\Roaming\\NuGet\\NuGet.Config",
