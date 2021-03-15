@@ -64,17 +64,26 @@ namespace Sistema_de_gestion_de_productos
         private void button1_Click_1(object sender, EventArgs e)
         {
             Form2 Form2 = new Form2();
-            AbrirForm(Form2);                      
+            AbrirForm(Form2);
+            this.button1.BackColor = Color.FromArgb(9, 56, 104);
+            this.button2.BackColor = Color.FromArgb(6, 37, 69);
+            this.button3.BackColor = Color.FromArgb(6, 37, 69);
         }
         private void button3_Click(object sender, EventArgs e)
         {
             Form4 Form4 = new Form4();
             AbrirForm(Form4);
+            this.button3.BackColor = Color.FromArgb(9, 56, 104);
+            this.button2.BackColor = Color.FromArgb(6, 37, 69);
+            this.button1.BackColor = Color.FromArgb(6, 37, 69);
         }
         private void button2_Click(object sender, EventArgs e)
         {
             Form3 Form3 = new Form3();
             AbrirForm(Form3);
+            this.button2.BackColor = Color.FromArgb(9, 56, 104);
+            this.button1.BackColor = Color.FromArgb(6, 37, 69);
+            this.button3.BackColor = Color.FromArgb(6, 37, 69);
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
