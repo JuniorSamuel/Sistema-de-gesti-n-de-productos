@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SQLite;
 using System.Text;
 
@@ -33,6 +34,22 @@ namespace Modelo.Dao
             }
             conn.Close();
             return Categorias;
+        }
+
+        public DataSet dataSet()
+        {
+            DataSet ds = new DataSet();
+            SQLiteDataAdapter da = new SQLiteDataAdapter("select * from Categoria", ConnectorSQLite.CreateConnection());
+            da.Fill(ds);
+            return ds;
+        }
+
+        public DataSet filtrar(string buscar)
+        {
+            DataSet ds = new DataSet();
+            SQLiteDataAdapter da = new SQLiteDataAdapter("select * from Categoria where Nombre = '"+ buscar +"%'", ConnectorSQLite.CreateConnection());
+            da.Fill(ds);
+            return ds;
         }
 
         public void agregar(Categoria categoria)
