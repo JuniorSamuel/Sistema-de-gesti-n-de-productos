@@ -16,6 +16,22 @@ namespace Modelo.Dto
         public int Categoria { get; set; }
         public bool Estado { get; set; }
 
-        
-    }
+        //Contrustor
+        public Producto(int Id, string Nombre, int Codigo, bool Stock, string Fecha, string Descripcion, int Categoria, bool Estado)
+        {
+            this.Id = Id;
+            this.Nombre = Nombre;
+            this.Codigo = Codigo;
+            this.Stock = Stock;
+            this.FechaVencimiento = Fecha;
+            this.Descripcion = Descripcion;
+            this.Categoria = Categoria;
+            this.Estado = Estado;
+        }
+
+        public Producto()
+        {
+
+        }
+    }    
 }

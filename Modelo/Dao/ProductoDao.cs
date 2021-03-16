@@ -15,9 +15,9 @@ namespace Modelo.Dao
         {
             ConnectorSQLite.CreateTable();
         }
-        public ArrayList verRegistro()
+        public List<Producto> verRegistro()
         {
-            ArrayList Productos = new ArrayList();
+            List<Producto> Productos= new List<Producto>();
             SQLiteConnection conn = ConnectorSQLite.CreateConnection();
             SQLiteCommand command;
             SQLiteDataReader reader;

@@ -15,9 +15,9 @@ namespace Modelo.Dao
             ConnectorSQLite.CreateTable();
         }
 
-        public ArrayList verRegistro()
+        public List<Categoria> verRegistro()
         {
-            ArrayList Categorias = new ArrayList();
+            List<Categoria> Categorias = new List<Categoria>();
             SQLiteConnection conn = ConnectorSQLite.CreateConnection();
             SQLiteCommand command;
             SQLiteDataReader reader;
@@ -31,6 +31,7 @@ namespace Modelo.Dao
                 categoria.Nombre = reader.GetString(1);
                 categoria.Estado = reader.GetBoolean(2);
                 Categorias.Add(categoria);
+                
             }
             conn.Close();
             return Categorias;
@@ -47,6 +48,7 @@ namespace Modelo.Dao
         public DataSet filtrar(string buscar)
         {
             DataSet ds = new DataSet();
+            System.Windows.Forms.MessageBox.Show("DataSet");
             SQLiteDataAdapter da = new SQLiteDataAdapter("select * from Categoria where Nombre = '"+ buscar +"%'", ConnectorSQLite.CreateConnection());
             da.Fill(ds);
             return ds;
