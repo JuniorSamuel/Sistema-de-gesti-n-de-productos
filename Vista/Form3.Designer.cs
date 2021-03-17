@@ -50,7 +50,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.label9 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbxEstadoCat = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -115,6 +115,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.button1.TabIndex = 13;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -146,7 +147,6 @@ namespace Sistema_de_gestion_de_productos.Vista
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(390, 232);
             this.dataGridView1.TabIndex = 11;
@@ -246,22 +246,22 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.label6.TabIndex = 14;
             this.label6.Text = "Estado";
             // 
-            // comboBox2
+            // cbxEstadoCat
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbxEstadoCat.FormattingEnabled = true;
+            this.cbxEstadoCat.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.comboBox2.Location = new System.Drawing.Point(507, 46);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(134, 23);
-            this.comboBox2.TabIndex = 18;
+            this.cbxEstadoCat.Location = new System.Drawing.Point(507, 46);
+            this.cbxEstadoCat.Name = "cbxEstadoCat";
+            this.cbxEstadoCat.Size = new System.Drawing.Size(134, 23);
+            this.cbxEstadoCat.TabIndex = 18;
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.cbxEstadoCat);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.textBox9);
             this.groupBox1.Controls.Add(this.label9);
@@ -320,7 +320,7 @@ namespace Sistema_de_gestion_de_productos.Vista
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbxEstadoCat;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
