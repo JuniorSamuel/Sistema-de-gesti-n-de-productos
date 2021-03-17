@@ -10,7 +10,6 @@ namespace Modelo.Dao
 {
     class ProductoDao
     {
-
         public ProductoDao()
         {
             ConnectorSQLite.CreateTable();
@@ -24,19 +23,24 @@ namespace Modelo.Dao
             command = conn.CreateCommand();
             command.CommandText = "select * from Producto";
             reader = command.ExecuteReader();
+            int i = 0;
             while (reader.Read())
-            {
-                Producto producto = new Producto();
-                producto.Id = reader.GetInt32(0);
-                producto.Nombre = reader.GetString(1);
-                producto.Codigo = reader.GetInt32(2);
-                producto.Stock = reader.GetBoolean(3);
-                producto.FechaVencimiento = reader.GetString(4);
-                producto.Descripcion = reader.GetString(5);
-                producto.Categoria = reader.GetInt32(6);
-                producto.Estado = reader.GetBoolean(7);
-                Productos.Add(producto);
+            {            
+                System.Windows.Forms.MessageBox.Show(reader.GetInt32(0)+"");               
+                Productos.Add(new Producto(
+                reader.GetInt32(0),
+                reader.GetString(1),
+                reader.GetInt32(2),
+                reader.GetBoolean(3),
+                reader.GetString(4),
+                reader.GetString(5),
+                reader.GetInt32(6),
+                reader.GetBoolean(7)
+                ));
+                System.Windows.Forms.MessageBox.Show(Productos[i].ToString());
+                i += 1;
             }
+            //eliminar(2);            
             conn.Close();
             return Productos;
         }
@@ -61,7 +65,14 @@ namespace Modelo.Dao
             SQLiteConnection conn = ConnectorSQLite.CreateConnection();
             SQLiteCommand sqliteCommand;
             sqliteCommand = conn.CreateCommand();
-            sqliteCommand.CommandText = "INSERT INTO Categoria( Nombre, Estado) VALUES ('" + producto.Nombre + "', " + producto.Estado + ");";
+            sqliteCommand.CommandText = @"INSERT INTO Producto( Nombre, Codigo, Stock, Fecha_vencimiento, Descripcion, Categoria, Estado) VALUES ("+
+                "'" + producto.Nombre + "', " +
+                "" + producto.Codigo + ", " +
+                "" + producto.Stock + ", " +
+                "'" + producto.FechaVencimiento + "', " +
+                "'" + producto.Descripcion + "', " +
+                "" + producto.Categoria + ", " +
+                "" + producto.Estado + ");";
             sqliteCommand.ExecuteNonQuery();
             conn.Close();
         }
@@ -71,7 +82,7 @@ namespace Modelo.Dao
             SQLiteConnection conn = ConnectorSQLite.CreateConnection();
             SQLiteCommand sqliteCommand;
             sqliteCommand = conn.CreateCommand();
-            sqliteCommand.CommandText = @"UPDATE Categoria set 
+            sqliteCommand.CommandText = @"UPDATE Producto set 
                                             Nombre = '" + producto.Nombre + "'," +
                                             "Codigo = " + producto.Codigo + "," +
                                             "Stock = " + producto.Stock + "," +
@@ -89,7 +100,17 @@ namespace Modelo.Dao
             SQLiteConnection conn = ConnectorSQLite.CreateConnection();
             SQLiteCommand sqliteCommand;
             sqliteCommand = conn.CreateCommand();
-            sqliteCommand.CommandText = "DELETE FROM Categoria WHERE IdCategoria = " + producto.Id + ";";
+            sqliteCommand.CommandText = "DELETE FROM Producto WHERE IdProducto = " + producto.Id + ";";
+            sqliteCommand.ExecuteNonQuery();
+            conn.Close();
+        }
+
+        public void eliminar(int Id)
+        {
+            SQLiteConnection conn = ConnectorSQLite.CreateConnection();
+            SQLiteCommand sqliteCommand;
+            sqliteCommand = conn.CreateCommand();
+            sqliteCommand.CommandText = "DELETE FROM Producto WHERE IdProducto = " + Id + ";";
             sqliteCommand.ExecuteNonQuery();
             conn.Close();
         }

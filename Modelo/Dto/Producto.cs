@@ -33,5 +33,10 @@ namespace Modelo.Dto
         {
 
         }
+        override
+        public string ToString()
+        {
+            return Id + ", " + Nombre + ", " + Codigo + ", " + Stock + ", " + FechaVencimiento + ", " + Descripcion + ", " + Categoria + ", " + Estado;
+        }
     }    
 }

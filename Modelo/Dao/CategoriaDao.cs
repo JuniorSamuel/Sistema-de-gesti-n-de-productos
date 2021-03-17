@@ -26,12 +26,11 @@ namespace Modelo.Dao
             reader = command.ExecuteReader();
             while (reader.Read())
             {
-                Categoria categoria = new Categoria();
-                categoria.Id = reader.GetInt32(0);
-                categoria.Nombre = reader.GetString(1);
-                categoria.Estado = reader.GetBoolean(2);
-                Categorias.Add(categoria);
-                
+                Categorias.Add( new Categoria(
+                reader.GetInt32(0),
+                reader.GetString(1),
+                reader.GetBoolean(2)
+                ));                
             }
             conn.Close();
             return Categorias;
