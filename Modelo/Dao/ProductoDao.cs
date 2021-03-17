@@ -90,7 +90,7 @@ namespace Modelo.Dao
                                             "Descripcion = '" + producto.Descripcion + "'," +
                                             "Categoria = " + producto.Categoria + "," +
                                             "Estado = " + producto.Estado + " " +
-                                            "WHERE IdCategoria = " + producto.Id + ";";
+                                            "WHERE IdProducto = " + producto.Id + ";";
             sqliteCommand.ExecuteNonQuery();
             conn.Close();
         }
@@ -100,17 +100,7 @@ namespace Modelo.Dao
             SQLiteConnection conn = ConnectorSQLite.CreateConnection();
             SQLiteCommand sqliteCommand;
             sqliteCommand = conn.CreateCommand();
-            sqliteCommand.CommandText = "DELETE FROM Producto WHERE IdProducto = " + producto.Id + ";";
-            sqliteCommand.ExecuteNonQuery();
-            conn.Close();
-        }
-
-        public void eliminar(int Id)
-        {
-            SQLiteConnection conn = ConnectorSQLite.CreateConnection();
-            SQLiteCommand sqliteCommand;
-            sqliteCommand = conn.CreateCommand();
-            sqliteCommand.CommandText = "DELETE FROM Producto WHERE IdProducto = " + Id + ";";
+            sqliteCommand.CommandText = "DELETE FROM Categoria WHERE IdCategoria = " + producto.Id + ";";
             sqliteCommand.ExecuteNonQuery();
             conn.Close();
         }
