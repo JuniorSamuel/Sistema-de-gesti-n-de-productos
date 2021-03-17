@@ -61,7 +61,7 @@ namespace Modelo.Dao
             SQLiteConnection conn = ConnectorSQLite.CreateConnection();
             SQLiteCommand sqliteCommand;
             sqliteCommand = conn.CreateCommand();
-            sqliteCommand.CommandText = "INSERT INTO Categoria( Nombre, Estado) VALUES ('" + producto.Nombre + "', " + producto.Estado + ");";
+            sqliteCommand.CommandText = "INSERT INTO Producto ( Nombre, Estado) VALUES ('" + producto.Nombre + "', " + producto.Estado + ");";
             sqliteCommand.ExecuteNonQuery();
             conn.Close();
         }
@@ -71,7 +71,7 @@ namespace Modelo.Dao
             SQLiteConnection conn = ConnectorSQLite.CreateConnection();
             SQLiteCommand sqliteCommand;
             sqliteCommand = conn.CreateCommand();
-            sqliteCommand.CommandText = @"UPDATE Categoria set 
+            sqliteCommand.CommandText = @"UPDATE Producto  set 
                                             Nombre = '" + producto.Nombre + "'," +
                                             "Codigo = " + producto.Codigo + "," +
                                             "Stock = " + producto.Stock + "," +
@@ -79,7 +79,7 @@ namespace Modelo.Dao
                                             "Descripcion = '" + producto.Descripcion + "'," +
                                             "Categoria = " + producto.Categoria + "," +
                                             "Estado = " + producto.Estado + " " +
-                                            "WHERE IdCategoria = " + producto.Id + ";";
+                                            "WHERE IdProducto = " + producto.Id + ";";
             sqliteCommand.ExecuteNonQuery();
             conn.Close();
         }
@@ -89,7 +89,7 @@ namespace Modelo.Dao
             SQLiteConnection conn = ConnectorSQLite.CreateConnection();
             SQLiteCommand sqliteCommand;
             sqliteCommand = conn.CreateCommand();
-            sqliteCommand.CommandText = "DELETE FROM Categoria WHERE IdCategoria = " + producto.Id + ";";
+            sqliteCommand.CommandText = "DELETE FROM Producto  WHERE IdProducto = " + producto.Id + ";";
             sqliteCommand.ExecuteNonQuery();
             conn.Close();
         }
