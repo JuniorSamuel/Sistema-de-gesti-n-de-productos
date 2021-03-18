@@ -14,6 +14,7 @@ namespace Modelo.Dao
         {
             ConnectorSQLite.CreateTable();
         }
+
         public List<Producto> verRegistro()
         {
             List<Producto> Productos= new List<Producto>();
@@ -22,11 +23,9 @@ namespace Modelo.Dao
             SQLiteDataReader reader;
             command = conn.CreateCommand();
             command.CommandText = "select * from Producto";
-            reader = command.ExecuteReader();
-            int i = 0;
+            reader = command.ExecuteReader();            
             while (reader.Read())
-            {            
-                System.Windows.Forms.MessageBox.Show(reader.GetInt32(0)+"");               
+            {        
                 Productos.Add(new Producto(
                 reader.GetInt32(0),
                 reader.GetString(1),
@@ -37,10 +36,8 @@ namespace Modelo.Dao
                 reader.GetInt32(6),
                 reader.GetBoolean(7)
                 ));
-                System.Windows.Forms.MessageBox.Show(Productos[i].ToString());
-                i += 1;
-            }
-            //eliminar(2);            
+               
+            }                      
             conn.Close();
             return Productos;
         }
@@ -53,13 +50,33 @@ namespace Modelo.Dao
             return ds;
         }
 
-        public DataSet filtrar(string buscar)
+        public List<Producto> filtrar(string buscar)
         {
-            DataSet ds = new DataSet();
-            SQLiteDataAdapter da = new SQLiteDataAdapter("select * from Producto where Nombre = '" + buscar + "%'", ConnectorSQLite.CreateConnection());
-            da.Fill(ds);
-            return ds;
+            List<Producto> Productos = new List<Producto>();
+            SQLiteConnection conn = ConnectorSQLite.CreateConnection();
+            SQLiteCommand command;
+            SQLiteDataReader reader;
+            command = conn.CreateCommand();
+            command.CommandText = "select * from Producto where Nombre = '" + buscar + "%'";
+            reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                Productos.Add(new Producto(
+                reader.GetInt32(0),
+                reader.GetString(1),
+                reader.GetInt32(2),
+                reader.GetBoolean(3),
+                reader.GetString(4),
+                reader.GetString(5),
+                reader.GetInt32(6),
+                reader.GetBoolean(7)
+                ));
+
+            }
+            conn.Close();
+            return Productos;
         }
+
         public void agregar(Producto producto)
         {
             SQLiteConnection conn = ConnectorSQLite.CreateConnection();
@@ -73,7 +90,7 @@ namespace Modelo.Dao
                 "'" + producto.Descripcion + "', " +
                 "" + producto.Categoria + ", " +
                 "" + producto.Estado + ");";
-            sqliteCommand.ExecuteNonQuery();
+            sqliteCommand.ExecuteNonQuery();            
             conn.Close();
         }
 

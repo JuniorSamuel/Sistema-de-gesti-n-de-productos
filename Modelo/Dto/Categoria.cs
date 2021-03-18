@@ -20,5 +20,11 @@ namespace Modelo.Dto
         {
 
         }
+
+        override
+        public string ToString()
+        {
+            return Id + ", " + Nombre + ", " + Estado;
+        }
     }   
 }

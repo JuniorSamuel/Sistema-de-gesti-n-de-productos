@@ -44,14 +44,26 @@ namespace Modelo.Dao
             return ds;
         }
 
-        public DataSet filtrar(string buscar)
+        public List<Categoria> filtrar(string buscar)
         {
-            DataSet ds = new DataSet();
-            System.Windows.Forms.MessageBox.Show("DataSet");
-            SQLiteDataAdapter da = new SQLiteDataAdapter("select * from Categoria where Nombre = '"+ buscar +"%'", ConnectorSQLite.CreateConnection());
-            da.Fill(ds);
-            return ds;
-        }
+            List<Categoria> Categorias = new List<Categoria>();
+            SQLiteConnection conn = ConnectorSQLite.CreateConnection();
+            SQLiteCommand command;
+            SQLiteDataReader reader;
+            command = conn.CreateCommand();
+            command.CommandText = "select * from Categoria where Nombre = '" + buscar + "%'";
+            reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                Categorias.Add(new Categoria(
+                reader.GetInt32(0),
+                reader.GetString(1),
+                reader.GetBoolean(2)
+                ));
+            }
+            conn.Close();
+            return Categorias;
+        }        
 
         public void agregar(Categoria categoria)
         {

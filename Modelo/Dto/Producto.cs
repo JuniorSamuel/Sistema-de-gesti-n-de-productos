@@ -38,5 +38,7 @@ namespace Modelo.Dto
         {
             return Id + ", " + Nombre + ", " + Codigo + ", " + Stock + ", " + FechaVencimiento + ", " + Descripcion + ", " + Categoria + ", " + Estado;
         }
+
+
     }    
 }

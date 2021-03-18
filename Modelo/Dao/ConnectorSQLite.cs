@@ -25,6 +25,7 @@ namespace Modelo.Dao
             return sqliteConn;
         }
 
+        //
         public static void CreateTable()
         {
             SQLiteCommand sqliteCommand;
@@ -59,6 +60,5 @@ namespace Modelo.Dao
 
             }
         }
-
     }
 }
