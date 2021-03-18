@@ -61,11 +61,11 @@ namespace Sistema_de_gestion_de_productos.Vista
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 32);
+            this.label2.Location = new System.Drawing.Point(61, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 15);
+            this.label2.Size = new System.Drawing.Size(54, 15);
             this.label2.TabIndex = 18;
-            this.label2.Text = "ID de la Categoria";
+            this.label2.Text = "Nombre ";
             // 
             // txtBuscarCat
             // 
@@ -197,7 +197,6 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.groupBox1.Size = new System.Drawing.Size(691, 78);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Estado";
             // 
             // label7
             // 
@@ -245,7 +244,6 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.groupBox2.Size = new System.Drawing.Size(691, 405);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Agregar Categoría";
             // 
             // btnBuscarCat
             // 

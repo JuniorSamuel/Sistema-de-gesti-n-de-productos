@@ -19,6 +19,7 @@ namespace Sistema_de_gestion_de_productos.Control
             vista.bnAgregar.Click += new EventHandler(agregar);
             vista.btnBuscarCat.Click += new EventHandler(BuscarDatos);
             vista.btnEliminar.Click += new EventHandler(EliminarDatos);
+            vista.btnModificar.Click += new EventHandler(ModificarDatos);
             
             categoria = new CategoriaDao();
             Contenedor = new Categoria();
@@ -35,7 +36,16 @@ namespace Sistema_de_gestion_de_productos.Control
             vista.dataGridCategotia.DataSource = categoria.filtrar(Contenedor);
 
         }
-        private void EliminarDatos(object sender, EventArgs e)
+        private void ModificarDatos(object sender, EventArgs e)
+        {
+            Contenedor.Id = int.Parse(vista.txtID.Text);
+            Contenedor.Nombre = vista.txtNombre.Text;
+            Contenedor.Estado = vista.cbEstado.SelectedItem.Equals("Activo");
+            categoria.modificar(Contenedor);
+            vista.dataGridCategotia.DataSource = categoria.verRegistro();
+
+        }
+    private void EliminarDatos(object sender, EventArgs e)
         {
             Contenedor.Id = int.Parse(vista.txtID.Text);
             categoria.eliminar(Contenedor);
