@@ -31,8 +31,8 @@ namespace Sistema_de_gestion_de_productos.Control
         }
         private void BuscarDatos(object sender, EventArgs e)
         {
-
-            vista.dataGridCategotia.DataSource = categoria.filtrar(vista.txtBuscarCat.Text);
+            Contenedor.Nombre = vista.txtBuscarCat.Text;
+            vista.dataGridCategotia.DataSource = categoria.filtrar(Contenedor);
 
         }
         private void EliminarDatos(object sender, EventArgs e)

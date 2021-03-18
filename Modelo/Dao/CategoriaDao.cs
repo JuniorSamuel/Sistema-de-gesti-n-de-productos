@@ -44,14 +44,14 @@ namespace Modelo.Dao
             return ds;
         }
 
-        public List<Categoria> filtrar(string buscar)
+        public List<Categoria> filtrar(Categoria categoria)
         {
             List<Categoria> Categorias = new List<Categoria>();
             SQLiteConnection conn = ConnectorSQLite.CreateConnection();
             SQLiteCommand command;
             SQLiteDataReader reader;
             command = conn.CreateCommand();
-            command.CommandText = "select * from Categoria where Nombre = '" + buscar + "%'";
+            command.CommandText = "select * from Categoria where Nombre = '" + categoria.Nombre + "'";
             reader = command.ExecuteReader();
             while (reader.Read())
             {
