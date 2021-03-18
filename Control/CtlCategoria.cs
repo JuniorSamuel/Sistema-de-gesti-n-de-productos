@@ -10,31 +10,44 @@ namespace Sistema_de_gestion_de_productos.Control
     class CtlCategoria
     {
         CategoriaDao categoria;
-        Categoria cat;
+        Categoria Contenedor;
         Form3 vista;
         public CtlCategoria(Form3 vista)
         {
             this.vista = vista;
             vista.Load += new EventHandler(cargarDatos);
             vista.bnAgregar.Click += new EventHandler(agregar);
-            //vista.button2.Click += new EventHandler();
+            vista.btnBuscarCat.Click += new EventHandler(BuscarDatos);
+            vista.btnEliminar.Click += new EventHandler(EliminarDatos);
+            
             categoria = new CategoriaDao();
-            cat = new Categoria();
+            Contenedor = new Categoria();
         }
-
-      
 
         private void cargarDatos(object sender, EventArgs e)
         {
             vista.dataGridCategotia.DataSource = categoria.verRegistro();                    
                         
         }
+        private void BuscarDatos(object sender, EventArgs e)
+        {
+
+            vista.dataGridCategotia.DataSource = categoria.filtrar(vista.txtBuscarCat.Text);
+
+        }
+        private void EliminarDatos(object sender, EventArgs e)
+        {
+            Contenedor.Id = int.Parse(vista.txtID.Text);
+            categoria.eliminar(Contenedor);
+            
+            vista.dataGridCategotia.DataSource = categoria.verRegistro();
+        }
 
         private void agregar(object sender, EventArgs e)
         {
-            cat.Nombre = vista.txtNombre.Text;
-            cat.Estado = vista.cbEstado.SelectedItem.Equals("Activo");
-            categoria.agregar(cat);
+            Contenedor.Nombre = vista.txtNombre.Text;
+            Contenedor.Estado = vista.cbEstado.SelectedItem.Equals("Activo");
+            categoria.agregar(Contenedor);
             vista.dataGridCategotia.DataSource =categoria.verRegistro();
 
             System.Windows.Forms.MessageBox.Show("Agregado");

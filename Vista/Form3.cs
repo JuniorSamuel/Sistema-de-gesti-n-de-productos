@@ -16,6 +16,10 @@ namespace Sistema_de_gestion_de_productos.Vista
             InitializeComponent();
             CtlCategoria control = new CtlCategoria(this);
         }
-        
+
+        private void bnAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
