@@ -37,15 +37,9 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.button2 = new System.Windows.Forms.Button();
             this.bnAgregar = new System.Windows.Forms.Button();
             this.dataGridCategotia = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();           
+            this.txtID = new System.Windows.Forms.TextBox();            
+            this.txtNombre = new System.Windows.Forms.TextBox();           
             this.cbEstado = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -139,6 +133,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.dataGridCategotia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridCategotia.Size = new System.Drawing.Size(665, 329);
             this.dataGridCategotia.TabIndex = 11;
+            
             // 
             // label8
             // 
@@ -148,38 +143,8 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.label8.Size = new System.Drawing.Size(36, 15);
             this.label8.TabIndex = 10;
             this.label8.Text = "Stock";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(454, 82);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 23);
-            this.textBox8.TabIndex = 11;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(382, 124);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 15);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Descipción";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(454, 121);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(134, 23);
-            this.textBox7.TabIndex = 13;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(36, 35);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(18, 15);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "ID";
+                                  
+            
             // 
             // txtID
             // 
@@ -189,17 +154,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(70, 23);
             this.txtID.TabIndex = 1;
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(206, 35);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 15);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Nombre";
+            
             // 
             // txtNombre
             // 
@@ -209,40 +164,19 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(134, 23);
             this.txtNombre.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(459, 35);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 15);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Estado";
-            // 
+            
             // cbEstado
-            // 
+            // comboBox2
             this.cbEstado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbEstado.FormattingEnabled = true;
-            this.cbEstado.Items.AddRange(new object[] {
-            "Activo",
-            "Inactivo"});
+            this.cbEstado.Items.AddRange(new object[] {});
             this.cbEstado.Location = new System.Drawing.Point(507, 32);
             this.cbEstado.Name = "cbEstado";
             this.cbEstado.Size = new System.Drawing.Size(134, 23);
-            this.cbEstado.TabIndex = 18;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.cbEstado);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.txtID);
-            this.groupBox1.Controls.Add(this.label10);
+            this.cbEstado.TabIndex = 18;            
+            this.groupBox1.Controls.Add(this.cbEstado);          
+            this.groupBox1.Controls.Add(this.txtNombre);            
+            this.groupBox1.Controls.Add(this.txtID);            
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(12, 24);
@@ -297,12 +231,7 @@ namespace Sistema_de_gestion_de_productos.Vista
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox2;        
         private System.Windows.Forms.GroupBox groupBox1;
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.Button button3;
