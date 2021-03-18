@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Control;
+using Sistema_de_gestion_de_productos.Control;
 
 namespace Sistema_de_gestion_de_productos.Vista
 {
@@ -13,17 +15,7 @@ namespace Sistema_de_gestion_de_productos.Vista
         public Form2()
         {
             InitializeComponent();
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            CtlProducto control = new CtlProducto(this);
         }
     }
 }
