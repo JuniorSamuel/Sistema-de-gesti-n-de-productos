@@ -36,9 +36,9 @@ namespace Modelo.Dao
             return Categorias;
         }
 
-        public DataSet dataSet()
+        public DataTable dataSet()
         {
-            DataSet ds = new DataSet();
+            DataTable ds = new DataTable();
             SQLiteDataAdapter da = new SQLiteDataAdapter("select * from Categoria", ConnectorSQLite.CreateConnection());
             da.Fill(ds);
             return ds;
