@@ -96,7 +96,8 @@ namespace Sistema_de_gestion_de_productos
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Participantes: \nJunior Samuel De los Santos \nJose Miguel Upia \n Klevin Hernadez \n Kerlin Smerlyn Liberato \n Eddy Manuel Peña ");
+            
+            MessageBox.Show("Participantes: \nJunior Samuel De los Santos 2019-8756 \nJose Miguel Upia 2019-8757 \nKlevin Hernadez 2019-8680\nKerlin Smerlyn Liberato 2019-8910 \n Eddy Manuel Peña 2019-8868 ");
 
         }
     }
