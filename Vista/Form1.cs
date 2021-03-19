@@ -58,14 +58,7 @@ namespace Sistema_de_gestion_de_productos
             this.button2.BackColor = Color.FromArgb(6, 37, 69);
             this.button3.BackColor = Color.FromArgb(6, 37, 69);
         }
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Form4 Form4 = new Form4();
-            AbrirForm(Form4);
-            this.button3.BackColor = Color.FromArgb(9, 56, 104);
-            this.button2.BackColor = Color.FromArgb(6, 37, 69);
-            this.button1.BackColor = Color.FromArgb(6, 37, 69);
-        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             Form3 Form3 = new Form3();
@@ -74,6 +67,8 @@ namespace Sistema_de_gestion_de_productos
             this.button1.BackColor = Color.FromArgb(6, 37, 69);
             this.button3.BackColor = Color.FromArgb(6, 37, 69);
         }
+
+
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -97,6 +92,12 @@ namespace Sistema_de_gestion_de_productos
             {
                 this.WindowState = FormWindowState.Maximized;
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Participantes: \nJunior Samuel De los Santos \nJose Miguel Upia \n Klevin Hernadez \n Kerlin Smerlyn Liberato \n Eddy Manuel Peña ");
+
         }
     }
 
