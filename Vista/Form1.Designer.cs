@@ -36,12 +36,12 @@ namespace Sistema_de_gestion_de_productos
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bnAcercade = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.bnAcercade = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -130,6 +130,22 @@ namespace Sistema_de_gestion_de_productos
             this.panel2.Size = new System.Drawing.Size(200, 525);
             this.panel2.TabIndex = 1;
             // 
+            // bnAcercade
+            // 
+            this.bnAcercade.FlatAppearance.BorderSize = 0;
+            this.bnAcercade.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
+            this.bnAcercade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnAcercade.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bnAcercade.Location = new System.Drawing.Point(0, 473);
+            this.bnAcercade.Name = "bnAcercade";
+            this.bnAcercade.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.bnAcercade.Size = new System.Drawing.Size(200, 40);
+            this.bnAcercade.TabIndex = 2;
+            this.bnAcercade.Text = "Acerca de";
+            this.bnAcercade.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bnAcercade.UseVisualStyleBackColor = true;
+            this.bnAcercade.Click += new System.EventHandler(this.button3_Click);
+            // 
             // button3
             // 
             this.button3.FlatAppearance.BorderSize = 0;
@@ -200,22 +216,6 @@ namespace Sistema_de_gestion_de_productos
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
-            // 
-            // bnAcercade
-            // 
-            this.bnAcercade.FlatAppearance.BorderSize = 0;
-            this.bnAcercade.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
-            this.bnAcercade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnAcercade.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bnAcercade.Location = new System.Drawing.Point(0, 473);
-            this.bnAcercade.Name = "bnAcercade";
-            this.bnAcercade.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.bnAcercade.Size = new System.Drawing.Size(200, 40);
-            this.bnAcercade.TabIndex = 2;
-            this.bnAcercade.Text = "Acerca de";
-            this.bnAcercade.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bnAcercade.UseVisualStyleBackColor = true;
-            this.bnAcercade.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 

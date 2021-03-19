@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Text;
+using System.Windows.Forms;
 
 namespace Sistema_de_gestion_de_productos.Control
 {
@@ -25,7 +26,8 @@ namespace Sistema_de_gestion_de_productos.Control
         private void cargarDatos(object sender, EventArgs e)
         {
             CategoriaDao categoria = new CategoriaDao();
-            vistaPro.dataGridProductor.DataSource = producto.verRegistro();                      
+            vistaPro.dataGridProductor.DataSource = producto.verRegistro();
+            vistaPro.dataGridProductor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             foreach (Categoria c in categoria.verRegistro())
             {
                 vistaPro.cbCategoria.Items.Add( c.Id);                
