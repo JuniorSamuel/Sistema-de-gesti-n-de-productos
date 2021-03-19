@@ -16,8 +16,9 @@ namespace Sistema_de_gestion_de_productos
     {
         public Form1()
         {
-            InitializeComponent();          
-            this.Size = SystemInformation.PrimaryMonitorMaximizedWindowSize;
+            InitializeComponent();
+
+
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -31,6 +32,7 @@ namespace Sistema_de_gestion_de_productos
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -56,14 +58,7 @@ namespace Sistema_de_gestion_de_productos
             this.button2.BackColor = Color.FromArgb(6, 37, 69);
             this.button3.BackColor = Color.FromArgb(6, 37, 69);
         }
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Form4 Form4 = new Form4();
-            AbrirForm(Form4);
-            this.button3.BackColor = Color.FromArgb(9, 56, 104);
-            this.button2.BackColor = Color.FromArgb(6, 37, 69);
-            this.button1.BackColor = Color.FromArgb(6, 37, 69);
-        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             Form3 Form3 = new Form3();
@@ -72,6 +67,8 @@ namespace Sistema_de_gestion_de_productos
             this.button1.BackColor = Color.FromArgb(6, 37, 69);
             this.button3.BackColor = Color.FromArgb(6, 37, 69);
         }
+
+
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -86,22 +83,21 @@ namespace Sistema_de_gestion_de_productos
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            
- 
-            if (this.Size == SystemInformation.PrimaryMonitorMaximizedWindowSize && this.Location == new Point(0,0) )
+            if (this.WindowState == FormWindowState.Maximized)
             {
-                this.Size = new Size(915, 565);
-                this.Location = new Point(250, 75);
+                this.WindowState = FormWindowState.Normal;
+                this.StartPosition = FormStartPosition.CenterScreen;
             }
             else
             {
-                this.Size = SystemInformation.PrimaryMonitorMaximizedWindowSize;
-                this.Location = new Point(0, 0);
+                this.WindowState = FormWindowState.Maximized;
             }
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
+            
+            MessageBox.Show("Participantes: \nJunior Samuel De los Santos 2019-8756 \nJose Miguel Upia 2019-8757 \nKlevin Hernadez 2019-8680\nKerlin Smerlyn Liberato 2019-8910 \n Eddy Manuel Peña 2019-8868 ");
 
         }
     }

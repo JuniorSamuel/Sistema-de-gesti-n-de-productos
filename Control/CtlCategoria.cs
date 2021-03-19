@@ -29,34 +29,40 @@ namespace Sistema_de_gestion_de_productos.Control
 
         private void selectdata(object sender, DataGridViewCellEventArgs e)
         {
-            if (vista.dataGridCategotia.Rows[e.RowIndex].Cells[e.ColumnIndex].Value !=null)
+            try
             {
-                vista.dataGridCategotia.CurrentRow.Selected = true;
-                vista.txtID.Text = vista.dataGridCategotia.Rows[e.RowIndex].Cells[0].FormattedValue.ToString();
-                vista.txtNombre.Text = vista.dataGridCategotia.Rows[e.RowIndex].Cells[1].FormattedValue.ToString();
-                
-               
-                if (vista.dataGridCategotia.Rows[e.RowIndex].Cells[2].FormattedValue.ToString() == "True")
+                if (vista.dataGridCategotia.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
                 {
-                    vista.cbEstado.SelectedIndex = 0;
+                    vista.dataGridCategotia.CurrentRow.Selected = true;
+                    vista.txtID.Text = vista.dataGridCategotia.Rows[e.RowIndex].Cells[0].FormattedValue.ToString();
+                    vista.txtNombre.Text = vista.dataGridCategotia.Rows[e.RowIndex].Cells[1].FormattedValue.ToString();
+
+
+                    if (vista.dataGridCategotia.Rows[e.RowIndex].Cells[2].FormattedValue.ToString() == "True")
+                    {
+                        vista.cbEstado.SelectedIndex = 0;
+                    }
+                    else
+                    {
+                        vista.cbEstado.SelectedIndex = 1;
+                    }
                 }
-                else
-                {
-                    vista.cbEstado.SelectedIndex = 1;
-                }
+            }catch
+            {
+
             }
         }
 
         private void cargarDatos(object sender, EventArgs e)
         {
-            vista.dataGridCategotia.DataSource = categoria.verRegistro();                    
-                        
+            vista.dataGridCategotia.DataSource = categoria.verRegistro();
+            vista.dataGridCategotia.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; ;
         }
         private void BuscarDatos(object sender, EventArgs e)
         {
             Contenedor.Nombre = vista.txtBuscarCat.Text;
             vista.dataGridCategotia.DataSource = categoria.filtrar(Contenedor);
-
+            vista.dataGridCategotia.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
      
@@ -67,13 +73,13 @@ namespace Sistema_de_gestion_de_productos.Control
             Contenedor.Estado = vista.cbEstado.SelectedItem.Equals("Activo");
             categoria.modificar(Contenedor);
             vista.dataGridCategotia.DataSource = categoria.verRegistro();
+            vista.dataGridCategotia.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
         }
-    private void EliminarDatos(object sender, EventArgs e)
+        private void EliminarDatos(object sender, EventArgs e)
         {
             Contenedor.Id = int.Parse(vista.txtID.Text);
-            categoria.eliminar(Contenedor);
-            
+            categoria.eliminar(Contenedor);            
             vista.dataGridCategotia.DataSource = categoria.verRegistro();
         }
 

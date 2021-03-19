@@ -35,13 +35,17 @@ namespace Sistema_de_gestion_de_productos.Vista
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dataGridProductor = new System.Windows.Forms.DataGridView();
+            this.dataGridProducto = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbStock = new System.Windows.Forms.ComboBox();
+            this.btEliminar = new System.Windows.Forms.Button();
             this.cbEstado = new System.Windows.Forms.ComboBox();
             this.cbCategoria = new System.Windows.Forms.ComboBox();
             this.dtFecha = new System.Windows.Forms.DateTimePicker();
+            this.btModificar = new System.Windows.Forms.Button();
             this.btAgregar = new System.Windows.Forms.Button();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,26 +56,22 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.label4 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btModificar = new System.Windows.Forms.Button();
-            this.btEliminar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridProductor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridProducto)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridProductor
+            // dataGridProducto
             // 
-            this.dataGridProductor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataGridProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridProductor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
-            this.dataGridProductor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridProductor.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridProducto.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
+            this.dataGridProducto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridProducto.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(24)))), ((int)(((byte)(46)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -79,24 +79,24 @@ namespace Sistema_de_gestion_de_productos.Vista
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(24)))), ((int)(((byte)(46)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridProductor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridProductor.ColumnHeadersHeight = 25;
-            this.dataGridProductor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridProductor.EnableHeadersVisualStyles = false;
-            this.dataGridProductor.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
-            this.dataGridProductor.Location = new System.Drawing.Point(6, 55);
-            this.dataGridProductor.Name = "dataGridProductor";
-            this.dataGridProductor.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridProductor.RowHeadersVisible = false;
+            this.dataGridProducto.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridProducto.ColumnHeadersHeight = 25;
+            this.dataGridProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridProducto.EnableHeadersVisualStyles = false;
+            this.dataGridProducto.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
+            this.dataGridProducto.Location = new System.Drawing.Point(6, 55);
+            this.dataGridProducto.Name = "dataGridProducto";
+            this.dataGridProducto.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridProducto.RowHeadersVisible = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridProductor.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridProductor.RowTemplate.Height = 25;
-            this.dataGridProductor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridProductor.Size = new System.Drawing.Size(666, 226);
-            this.dataGridProductor.TabIndex = 3;
+            this.dataGridProducto.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridProducto.RowTemplate.Height = 25;
+            this.dataGridProducto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridProducto.Size = new System.Drawing.Size(666, 226);
+            this.dataGridProducto.TabIndex = 3;
             // 
             // groupBox1
             // 
@@ -141,6 +141,18 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.cbStock.Size = new System.Drawing.Size(134, 23);
             this.cbStock.TabIndex = 19;
             // 
+            // btEliminar
+            // 
+            this.btEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
+            this.btEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btEliminar.Location = new System.Drawing.Point(405, 201);
+            this.btEliminar.Name = "btEliminar";
+            this.btEliminar.Size = new System.Drawing.Size(75, 27);
+            this.btEliminar.TabIndex = 7;
+            this.btEliminar.Text = "Eliminar";
+            this.btEliminar.UseVisualStyleBackColor = true;
+            // 
             // cbEstado
             // 
             this.cbEstado.FormattingEnabled = true;
@@ -168,6 +180,18 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.dtFecha.Size = new System.Drawing.Size(128, 23);
             this.dtFecha.TabIndex = 16;
             // 
+            // btModificar
+            // 
+            this.btModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
+            this.btModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btModificar.Location = new System.Drawing.Point(314, 201);
+            this.btModificar.Name = "btModificar";
+            this.btModificar.Size = new System.Drawing.Size(75, 27);
+            this.btModificar.TabIndex = 6;
+            this.btModificar.Text = "Modificar";
+            this.btModificar.UseVisualStyleBackColor = true;
+            // 
             // btAgregar
             // 
             this.btAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -179,6 +203,26 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.btAgregar.TabIndex = 5;
             this.btAgregar.Text = "Agregar";
             this.btAgregar.UseVisualStyleBackColor = true;
+            // 
+            // txtID
+            // 
+            this.txtID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
+            this.txtID.Enabled = false;
+            this.txtID.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtID.Location = new System.Drawing.Point(151, 39);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(128, 23);
+            this.txtID.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(127, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(18, 15);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "ID";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label6
             // 
@@ -264,49 +308,6 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.label3.TabIndex = 2;
             this.label3.Text = "Código";
             // 
-            // txtID
-            // 
-            this.txtID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
-            this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(151, 39);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(128, 23);
-            this.txtID.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(127, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(18, 15);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "ID";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // btModificar
-            // 
-            this.btModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
-            this.btModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btModificar.Location = new System.Drawing.Point(314, 201);
-            this.btModificar.Name = "btModificar";
-            this.btModificar.Size = new System.Drawing.Size(75, 27);
-            this.btModificar.TabIndex = 6;
-            this.btModificar.Text = "Modificar";
-            this.btModificar.UseVisualStyleBackColor = true;
-            // 
-            // btEliminar
-            // 
-            this.btEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
-            this.btEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btEliminar.Location = new System.Drawing.Point(405, 201);
-            this.btEliminar.Name = "btEliminar";
-            this.btEliminar.Size = new System.Drawing.Size(75, 27);
-            this.btEliminar.TabIndex = 7;
-            this.btEliminar.Text = "Eliminar";
-            this.btEliminar.UseVisualStyleBackColor = true;
-            // 
             // txtBuscar
             // 
             this.txtBuscar.Location = new System.Drawing.Point(112, 25);
@@ -327,7 +328,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.dataGridProductor);
+            this.groupBox2.Controls.Add(this.dataGridProducto);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtBuscar);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -352,7 +353,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.Name = "Form2";
             this.Text = "Form2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridProductor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridProducto)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -372,7 +373,7 @@ namespace Sistema_de_gestion_de_productos.Vista
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.DataGridView dataGridProductor;
+        public System.Windows.Forms.DataGridView dataGridProducto;
         public System.Windows.Forms.Button btAgregar;
         public System.Windows.Forms.Button btModificar;
         public System.Windows.Forms.Button btEliminar;

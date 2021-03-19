@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sistema_de_gestion_de_productos.Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,21 +14,7 @@ namespace Sistema_de_gestion_de_productos.Vista
         public Form4()
         {
             InitializeComponent();
-        }
-
-        private void Form4_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+            CtlVistaProducto control = new CtlVistaProducto(this);
+        }       
     }
 }
