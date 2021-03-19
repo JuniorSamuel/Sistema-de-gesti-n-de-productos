@@ -117,7 +117,7 @@ namespace Modelo.Dao
             SQLiteConnection conn = ConnectorSQLite.CreateConnection();
             SQLiteCommand sqliteCommand;
             sqliteCommand = conn.CreateCommand();
-            sqliteCommand.CommandText = "DELETE FROM Categoria WHERE IdCategoria = " + producto.Id + ";";
+            sqliteCommand.CommandText = "DELETE FROM Producto WHERE IdProducto = " + producto.Id + ";";
             sqliteCommand.ExecuteNonQuery();
             conn.Close();
         }
