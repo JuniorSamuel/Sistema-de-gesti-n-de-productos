@@ -51,7 +51,7 @@ namespace Modelo.Dao
             SQLiteCommand command;
             SQLiteDataReader reader;
             command = conn.CreateCommand();
-            command.CommandText = "select * from Categoria where Nombre = '" + categoria.Nombre + "'";
+            command.CommandText = "select * from Categoria where Nombre Like '" + categoria.Nombre + "%'";
             reader = command.ExecuteReader();
             while (reader.Read())
             {

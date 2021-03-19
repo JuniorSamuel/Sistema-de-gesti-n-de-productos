@@ -46,7 +46,6 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnBuscarCat = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -61,7 +60,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 32);
+            this.label2.Location = new System.Drawing.Point(14, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 15);
             this.label2.TabIndex = 18;
@@ -69,7 +68,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             // 
             // txtBuscarCat
             // 
-            this.txtBuscarCat.Location = new System.Drawing.Point(128, 29);
+            this.txtBuscarCat.Location = new System.Drawing.Point(74, 32);
             this.txtBuscarCat.Name = "txtBuscarCat";
             this.txtBuscarCat.Size = new System.Drawing.Size(170, 23);
             this.txtBuscarCat.TabIndex = 16;
@@ -79,7 +78,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Location = new System.Drawing.Point(602, 26);
+            this.btnEliminar.Location = new System.Drawing.Point(400, 74);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 27);
             this.btnEliminar.TabIndex = 15;
@@ -91,7 +90,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.btnModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificar.Location = new System.Drawing.Point(521, 26);
+            this.btnModificar.Location = new System.Drawing.Point(319, 74);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 27);
             this.btnModificar.TabIndex = 14;
@@ -103,7 +102,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.bnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
             this.bnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnAgregar.Location = new System.Drawing.Point(440, 26);
+            this.bnAgregar.Location = new System.Drawing.Point(238, 74);
             this.bnAgregar.Name = "bnAgregar";
             this.bnAgregar.Size = new System.Drawing.Size(75, 27);
             this.bnAgregar.TabIndex = 13;
@@ -131,7 +130,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.dataGridCategotia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridCategotia.EnableHeadersVisualStyles = false;
             this.dataGridCategotia.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
-            this.dataGridCategotia.Location = new System.Drawing.Point(12, 63);
+            this.dataGridCategotia.Location = new System.Drawing.Point(12, 61);
             this.dataGridCategotia.Name = "dataGridCategotia";
             this.dataGridCategotia.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridCategotia.RowHeadersVisible = false;
@@ -141,7 +140,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridCategotia.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridCategotia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridCategotia.Size = new System.Drawing.Size(665, 329);
+            this.dataGridCategotia.Size = new System.Drawing.Size(665, 292);
             this.dataGridCategotia.TabIndex = 11;
             // 
             // label8
@@ -185,18 +184,22 @@ namespace Sistema_de_gestion_de_productos.Vista
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.btnEliminar);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.btnModificar);
             this.groupBox1.Controls.Add(this.cbEstado);
+            this.groupBox1.Controls.Add(this.bnAgregar);
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.txtID);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(12, 24);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(691, 78);
+            this.groupBox1.Size = new System.Drawing.Size(691, 117);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Agregar Categoria";
             // 
             // label7
             // 
@@ -230,32 +233,17 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.btnBuscarCat);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.btnEliminar);
             this.groupBox2.Controls.Add(this.txtBuscarCat);
-            this.groupBox2.Controls.Add(this.btnModificar);
             this.groupBox2.Controls.Add(this.dataGridCategotia);
-            this.groupBox2.Controls.Add(this.bnAgregar);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(12, 108);
+            this.groupBox2.Location = new System.Drawing.Point(12, 147);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(691, 405);
+            this.groupBox2.Size = new System.Drawing.Size(691, 366);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
-            // 
-            // btnBuscarCat
-            // 
-            this.btnBuscarCat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBuscarCat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
-            this.btnBuscarCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarCat.Location = new System.Drawing.Point(304, 26);
-            this.btnBuscarCat.Name = "btnBuscarCat";
-            this.btnBuscarCat.Size = new System.Drawing.Size(75, 27);
-            this.btnBuscarCat.TabIndex = 13;
-            this.btnBuscarCat.Text = "Buscar";
-            this.btnBuscarCat.UseVisualStyleBackColor = true;
+            this.groupBox2.Text = "Lista de categoria";
             // 
             // label4
             // 
@@ -356,6 +344,5 @@ namespace Sistema_de_gestion_de_productos.Vista
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.Button btnBuscarCat;
     }
 }

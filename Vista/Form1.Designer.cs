@@ -40,6 +40,7 @@ namespace Sistema_de_gestion_de_productos
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.bnAcercade = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -102,6 +103,7 @@ namespace Sistema_de_gestion_de_productos
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
+            this.panel2.Controls.Add(this.bnAcercade);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
@@ -179,6 +181,22 @@ namespace Sistema_de_gestion_de_productos
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
+            // bnAcercade
+            // 
+            this.bnAcercade.FlatAppearance.BorderSize = 0;
+            this.bnAcercade.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
+            this.bnAcercade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnAcercade.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bnAcercade.Location = new System.Drawing.Point(0, 473);
+            this.bnAcercade.Name = "bnAcercade";
+            this.bnAcercade.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.bnAcercade.Size = new System.Drawing.Size(200, 40);
+            this.bnAcercade.TabIndex = 2;
+            this.bnAcercade.Text = "Acerca de";
+            this.bnAcercade.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bnAcercade.UseVisualStyleBackColor = true;
+            this.bnAcercade.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -214,6 +232,7 @@ namespace Sistema_de_gestion_de_productos
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button bnAcercade;
     }
 }
 

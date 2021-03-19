@@ -17,5 +17,10 @@ namespace Sistema_de_gestion_de_productos.Vista
             InitializeComponent();
             CtlProducto control = new CtlProducto(this);
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

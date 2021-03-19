@@ -57,7 +57,7 @@ namespace Modelo.Dao
             SQLiteCommand command;
             SQLiteDataReader reader;
             command = conn.CreateCommand();
-            command.CommandText = "select * from Producto where Nombre = '" + buscar + "%'";
+            command.CommandText = "select * from Producto where Nombre Like '" + buscar + "%'";
             reader = command.ExecuteReader();
             while (reader.Read())
             {
