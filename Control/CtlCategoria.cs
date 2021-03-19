@@ -4,6 +4,7 @@ using Sistema_de_gestion_de_productos.Vista;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Forms;
 
 namespace Sistema_de_gestion_de_productos.Control
 {
@@ -16,13 +17,34 @@ namespace Sistema_de_gestion_de_productos.Control
         {
             this.vista = vista;
             vista.Load += new EventHandler(cargarDatos);
-            vista.bnAgregar.Click += new EventHandler(agregar);
-            vista.btnBuscarCat.Click += new EventHandler(BuscarDatos);
+            vista.bnAgregar.Click += new EventHandler(agregar);           
             vista.btnEliminar.Click += new EventHandler(EliminarDatos);
             vista.btnModificar.Click += new EventHandler(ModificarDatos);
+            vista.txtBuscarCat.TextChanged += new EventHandler(BuscarDatos);
+            vista.dataGridCategotia.CellClick += new DataGridViewCellEventHandler(selectdata);
             
             categoria = new CategoriaDao();
             Contenedor = new Categoria();
+        }
+
+        private void selectdata(object sender, DataGridViewCellEventArgs e)
+        {
+            if (vista.dataGridCategotia.Rows[e.RowIndex].Cells[e.ColumnIndex].Value !=null)
+            {
+                vista.dataGridCategotia.CurrentRow.Selected = true;
+                vista.txtID.Text = vista.dataGridCategotia.Rows[e.RowIndex].Cells[0].FormattedValue.ToString();
+                vista.txtNombre.Text = vista.dataGridCategotia.Rows[e.RowIndex].Cells[1].FormattedValue.ToString();
+                
+               
+                if (vista.dataGridCategotia.Rows[e.RowIndex].Cells[2].FormattedValue.ToString() == "True")
+                {
+                    vista.cbEstado.SelectedIndex = 0;
+                }
+                else
+                {
+                    vista.cbEstado.SelectedIndex = 1;
+                }
+            }
         }
 
         private void cargarDatos(object sender, EventArgs e)
@@ -36,6 +58,8 @@ namespace Sistema_de_gestion_de_productos.Control
             vista.dataGridCategotia.DataSource = categoria.filtrar(Contenedor);
 
         }
+
+     
         private void ModificarDatos(object sender, EventArgs e)
         {
             Contenedor.Id = int.Parse(vista.txtID.Text);
