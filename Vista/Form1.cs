@@ -17,7 +17,8 @@ namespace Sistema_de_gestion_de_productos
         public Form1()
         {
             InitializeComponent();
-            
+
+
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -79,6 +80,22 @@ namespace Sistema_de_gestion_de_productos
             if (this.panel3.Controls.Count > 0)
             {
                 this.panel3.Controls.RemoveAt(0);
+                Form5 Form5 = new Form5();
+                AbrirForm(Form5);
+                
+            }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.StartPosition = FormStartPosition.CenterScreen;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
             }
         }
     }
