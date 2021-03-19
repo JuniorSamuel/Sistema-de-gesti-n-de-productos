@@ -36,16 +36,16 @@ namespace Sistema_de_gestion_de_productos
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bnAcercade = new System.Windows.Forms.Button();
+            //this.bnAcercade = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
             this.button4 = new System.Windows.Forms.Button();
->>>>>>> 4ab7047cb6dfcee68778d0582794da4eabe1a87a
+//>>>>>>> 4ab7047cb6dfcee68778d0582794da4eabe1a87a
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -136,7 +136,7 @@ namespace Sistema_de_gestion_de_productos
             // 
             // bnAcercade
             // 
-            this.bnAcercade.FlatAppearance.BorderSize = 0;
+            /*this.bnAcercade.FlatAppearance.BorderSize = 0;
             this.bnAcercade.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
             this.bnAcercade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bnAcercade.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -148,7 +148,7 @@ namespace Sistema_de_gestion_de_productos
             this.bnAcercade.Text = "Acerca de";
             this.bnAcercade.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bnAcercade.UseVisualStyleBackColor = true;
-            this.bnAcercade.Click += new System.EventHandler(this.button3_Click);
+            this.bnAcercade.Click += new System.EventHandler(this.button3_Click);*/
             // 
             // button3
             // 
@@ -220,8 +220,8 @@ namespace Sistema_de_gestion_de_productos
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
             // 
-<<<<<<< HEAD
-=======
+/*<<<<<<< HEAD
+=======*/
             // button4
             // 
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -240,7 +240,7 @@ namespace Sistema_de_gestion_de_productos
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
->>>>>>> 4ab7047cb6dfcee68778d0582794da4eabe1a87a
+//>>>>>>> 4ab7047cb6dfcee68778d0582794da4eabe1a87a
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);

@@ -72,9 +72,7 @@ namespace Sistema_de_gestion_de_productos.Control
                 {
                     vistaPro.dataGridProducto.CurrentRow.Selected = true;
                     vistaPro.txtID.Text = vistaPro.dataGridProducto.Rows[e.RowIndex].Cells[0].FormattedValue.ToString();
-                   /* vistaPro.txtNombre.Text = vistaPro.dataGridProducto.Rows[e.RowIndex].Cells[1].FormattedValue.ToString();
-
-
+                    vistaPro.txtNombre.Text = vistaPro.dataGridProducto.Rows[e.RowIndex].Cells[1].FormattedValue.ToString();
                     if (vistaPro.dataGridProducto.Rows[e.RowIndex].Cells[2].FormattedValue.ToString() == "True")
                     {
                         vistaPro.cbEstado.SelectedIndex = 0;
@@ -82,7 +80,7 @@ namespace Sistema_de_gestion_de_productos.Control
                     else
                     {
                         vistaPro.cbEstado.SelectedIndex = 1;
-                    }*/
+                    }
                 }
             }
             catch
