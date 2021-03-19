@@ -36,16 +36,22 @@ namespace Sistema_de_gestion_de_productos
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             //this.bnAcercade = new System.Windows.Forms.Button();
+=======
+>>>>>>> ce32c2b534823c96b2e05e33fbdc8f5455f033f1
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
 //<<<<<<< HEAD
 //=======
             this.button4 = new System.Windows.Forms.Button();
 //>>>>>>> 4ab7047cb6dfcee68778d0582794da4eabe1a87a
+=======
+>>>>>>> ce32c2b534823c96b2e05e33fbdc8f5455f033f1
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -124,7 +130,6 @@ namespace Sistema_de_gestion_de_productos
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
-            this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
@@ -134,6 +139,7 @@ namespace Sistema_de_gestion_de_productos
             this.panel2.Size = new System.Drawing.Size(200, 525);
             this.panel2.TabIndex = 1;
             // 
+<<<<<<< HEAD
             // bnAcercade
             // 
             /*this.bnAcercade.FlatAppearance.BorderSize = 0;
@@ -150,6 +156,8 @@ namespace Sistema_de_gestion_de_productos
             this.bnAcercade.UseVisualStyleBackColor = true;
             this.bnAcercade.Click += new System.EventHandler(this.button3_Click);*/
             // 
+=======
+>>>>>>> ce32c2b534823c96b2e05e33fbdc8f5455f033f1
             // button3
             // 
             this.button3.FlatAppearance.BorderSize = 0;
@@ -164,6 +172,7 @@ namespace Sistema_de_gestion_de_productos
             this.button3.Text = "Listado de Productos";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -220,6 +229,7 @@ namespace Sistema_de_gestion_de_productos
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
             // 
+<<<<<<< HEAD
 /*<<<<<<< HEAD
 =======*/
             // button4
@@ -241,6 +251,8 @@ namespace Sistema_de_gestion_de_productos
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
 //>>>>>>> 4ab7047cb6dfcee68778d0582794da4eabe1a87a
+=======
+>>>>>>> ce32c2b534823c96b2e05e33fbdc8f5455f033f1
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);

@@ -100,6 +100,15 @@ namespace Sistema_de_gestion_de_productos
             MessageBox.Show("Participantes: \nJunior Samuel De los Santos 2019-8756 \nJose Miguel Upia 2019-8757 \nKlevin Hernadez 2019-8680\nKerlin Smerlyn Liberato 2019-8910 \n Eddy Manuel Peña 2019-8868 ");
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form3 Form3 = new Form3();
+            AbrirForm(Form3);
+            this.button2.BackColor = Color.FromArgb(9, 56, 104);
+            this.button1.BackColor = Color.FromArgb(6, 37, 69);
+            this.button3.BackColor = Color.FromArgb(6, 37, 69);
+        }
     }
 
 }
