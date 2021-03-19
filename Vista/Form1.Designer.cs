@@ -36,12 +36,12 @@ namespace Sistema_de_gestion_de_productos
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bnAcercade = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.bnAcercade = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -64,6 +64,7 @@ namespace Sistema_de_gestion_de_productos
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(915, 40);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
             // pictureBox3
@@ -129,6 +130,23 @@ namespace Sistema_de_gestion_de_productos
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 525);
             this.panel2.TabIndex = 1;
+            // 
+            // bnAcercade
+            // 
+            this.bnAcercade.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bnAcercade.FlatAppearance.BorderSize = 0;
+            this.bnAcercade.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
+            this.bnAcercade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnAcercade.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bnAcercade.Location = new System.Drawing.Point(0, 485);
+            this.bnAcercade.Name = "bnAcercade";
+            this.bnAcercade.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.bnAcercade.Size = new System.Drawing.Size(200, 40);
+            this.bnAcercade.TabIndex = 2;
+            this.bnAcercade.Text = "Acerca de";
+            this.bnAcercade.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bnAcercade.UseVisualStyleBackColor = true;
+            this.bnAcercade.Click += new System.EventHandler(this.button3_Click);
             // 
             // button3
             // 
@@ -201,22 +219,6 @@ namespace Sistema_de_gestion_de_productos
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
             // 
-            // bnAcercade
-            // 
-            this.bnAcercade.FlatAppearance.BorderSize = 0;
-            this.bnAcercade.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
-            this.bnAcercade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnAcercade.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bnAcercade.Location = new System.Drawing.Point(0, 473);
-            this.bnAcercade.Name = "bnAcercade";
-            this.bnAcercade.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.bnAcercade.Size = new System.Drawing.Size(200, 40);
-            this.bnAcercade.TabIndex = 2;
-            this.bnAcercade.Text = "Acerca de";
-            this.bnAcercade.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bnAcercade.UseVisualStyleBackColor = true;
-            this.bnAcercade.Click += new System.EventHandler(this.button3_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -227,7 +229,6 @@ namespace Sistema_de_gestion_de_productos
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Menu Principal";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
