@@ -25,8 +25,7 @@ namespace Sistema_de_gestion_de_productos.Control
         private void cargarDatos(object sender, EventArgs e)
         {
             CategoriaDao categoria = new CategoriaDao();
-            vistaPro.dataGridProductor.DataSource = producto.verRegistro();
-            System.Windows.Forms.MessageBox.Show("Load");            
+            vistaPro.dataGridProductor.DataSource = producto.verRegistro();                      
             foreach (Categoria c in categoria.verRegistro())
             {
                 vistaPro.cbCategoria.Items.Add( c.Id);                

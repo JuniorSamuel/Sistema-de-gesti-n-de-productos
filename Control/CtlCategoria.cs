@@ -69,7 +69,7 @@ namespace Sistema_de_gestion_de_productos.Control
             vista.dataGridCategotia.DataSource = categoria.verRegistro();
 
         }
-    private void EliminarDatos(object sender, EventArgs e)
+        private void EliminarDatos(object sender, EventArgs e)
         {
             Contenedor.Id = int.Parse(vista.txtID.Text);
             categoria.eliminar(Contenedor);
