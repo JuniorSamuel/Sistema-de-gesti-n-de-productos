@@ -36,12 +36,12 @@ namespace Sistema_de_gestion_de_productos
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.formLP = new System.Windows.Forms.Button();
+            this.formMC = new System.Windows.Forms.Button();
+            this.formMP = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -121,62 +121,72 @@ namespace Sistema_de_gestion_de_productos
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
             this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.formLP);
+            this.panel2.Controls.Add(this.formMC);
+            this.panel2.Controls.Add(this.formMP);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 40);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 525);
             this.panel2.TabIndex = 1;
             // 
-            // button3
+            // button5
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(0, 259);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.button3.Size = new System.Drawing.Size(200, 40);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Listado de Productos";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button5.Location = new System.Drawing.Point(119, 490);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button2
+            // formLP
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(0, 220);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.button2.Size = new System.Drawing.Size(200, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Mantenimiento de Categorías";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.formLP.FlatAppearance.BorderSize = 0;
+            this.formLP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
+            this.formLP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.formLP.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.formLP.Location = new System.Drawing.Point(0, 259);
+            this.formLP.Name = "formLP";
+            this.formLP.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.formLP.Size = new System.Drawing.Size(200, 40);
+            this.formLP.TabIndex = 2;
+            this.formLP.Text = "Listado de Productos";
+            this.formLP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.formLP.UseVisualStyleBackColor = true;
+            this.formLP.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button1
+            // formMC
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(0, 181);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.button1.Size = new System.Drawing.Size(200, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Mantenimiento de Producto";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.formMC.FlatAppearance.BorderSize = 0;
+            this.formMC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
+            this.formMC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.formMC.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.formMC.Location = new System.Drawing.Point(0, 220);
+            this.formMC.Name = "formMC";
+            this.formMC.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.formMC.Size = new System.Drawing.Size(200, 40);
+            this.formMC.TabIndex = 1;
+            this.formMC.Text = "Mantenimiento de Categorías";
+            this.formMC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.formMC.UseVisualStyleBackColor = true;
+            this.formMC.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // formMP
+            // 
+            this.formMP.FlatAppearance.BorderSize = 0;
+            this.formMP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
+            this.formMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.formMP.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.formMP.Location = new System.Drawing.Point(0, 181);
+            this.formMP.Name = "formMP";
+            this.formMP.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.formMP.Size = new System.Drawing.Size(200, 40);
+            this.formMP.TabIndex = 0;
+            this.formMP.Text = "Mantenimiento de Producto";
+            this.formMP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.formMP.UseVisualStyleBackColor = true;
+            this.formMP.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // panel3
             // 
@@ -200,16 +210,6 @@ namespace Sistema_de_gestion_de_productos
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(119, 490);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
@@ -242,13 +242,12 @@ namespace Sistema_de_gestion_de_productos
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button formMP;
+        private System.Windows.Forms.Button formMC;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button formLP;
         private System.Windows.Forms.Button button5;
     }
 }
