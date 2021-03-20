@@ -5,7 +5,6 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Control;
 using Sistema_de_gestion_de_productos.Control;
 
 namespace Sistema_de_gestion_de_productos.Vista
