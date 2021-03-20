@@ -47,7 +47,25 @@ namespace Modelo.Dao
 	            'Estado'    INTEGER,
             PRIMARY KEY('idProducto' AUTOINCREMENT),
             FOREIGN KEY('Categoria') REFERENCES Categoria(idCategoria) 
+
+            INSERT INTO Categoria(Nombre, Estado) VALUES
+                ('Categoria 1', 1), 
+                ('Categoria 2', 1), 
+                ('Categoria 3', 1), 
+                ('Categoria 4', 1), 
+                ('Categoria 5', 1);          
+
+            INSERT INTO Producto( Nombre, Codigo, Stock, Fecha_vencimiento, Descripcion, Categoria, Estado) VALUES 
+                ('Producto 1', 1234, 1, 'miércoles, 17 de marzo de 2021', 'Descripcion de producto', 1, 0)
+                ('Producto 2', 1235, 1, 'miércoles, 17 de marzo de 2021', 'Descripcion de producto', 2, 0)
+                ('Producto 3', 1236, 1, 'miércoles, 17 de marzo de 2021', 'Descripcion de producto', 1, 0)
+                ('Producto 4', 1237, 0, 'miércoles, 17 de marzo de 2021', 'Descripcion de producto', 4, 0)
+                ('Producto 5', 1238, 1, 'miércoles, 17 de marzo de 2021', 'Descripcion de producto', 5, 0)
+                ('Producto 6', 1240, 1, 'miércoles, 17 de marzo de 2021', 'Descripcion de producto', 4, 0)
+                ('Producto 7', 1241, 1, 'miércoles, 17 de marzo de 2021', 'Descripcion de producto', 2, 0)
+                ('Producto 8', 1242, 1, 'miércoles, 17 de marzo de 2021', 'Descripcion de producto', 3, 0)
             ); ";
+
             sqliteCommand = ConnectorSQLite.CreateConnection().CreateCommand();
             sqliteCommand.CommandText = createSQL;
             try
