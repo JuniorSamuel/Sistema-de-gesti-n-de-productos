@@ -207,6 +207,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(450, 35);
             this.label7.Name = "label7";

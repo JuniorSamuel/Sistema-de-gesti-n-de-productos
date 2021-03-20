@@ -99,9 +99,9 @@ namespace Sistema_de_gestion_de_productos
         {
             Form4 Form4 = new Form4();
             AbrirForm(Form4);
-            this.formMC.BackColor = Color.FromArgb(9, 56, 104);
+            this.formMC.BackColor = Color.FromArgb(6, 37, 69);
             this.formMP.BackColor = Color.FromArgb(6, 37, 69);
-            this.formLP.BackColor = Color.FromArgb(6, 37, 69);
+            this.formLP.BackColor = Color.FromArgb(9, 56, 104);
         }
 
         private void button5_Click(object sender, EventArgs e)
