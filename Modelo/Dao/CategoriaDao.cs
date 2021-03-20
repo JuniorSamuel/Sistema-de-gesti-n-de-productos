@@ -17,6 +17,7 @@ namespace Modelo.Dao
 
         public List<Categoria> verRegistro()
         {
+            ConnectorSQLite.CreateTable();
             List<Categoria> Categorias = new List<Categoria>();
             SQLiteConnection conn = ConnectorSQLite.CreateConnection();
             SQLiteCommand command;

@@ -17,27 +17,37 @@ namespace Modelo.Dao
 
         public List<Producto> verRegistro()
         {
-            List<Producto> Productos= new List<Producto>();
-            SQLiteConnection conn = ConnectorSQLite.CreateConnection();
-            SQLiteCommand command;
-            SQLiteDataReader reader;
-            command = conn.CreateCommand();
-            command.CommandText = "select * from Producto";
-            reader = command.ExecuteReader();            
-            while (reader.Read())
-            {        
-                Productos.Add(new Producto(
-                reader.GetInt32(0),
-                reader.GetString(1),
-                reader.GetInt32(2),
-                reader.GetBoolean(3),
-                reader.GetString(4),
-                reader.GetString(5),
-                reader.GetInt32(6),
-                reader.GetBoolean(7)
-                ));
-               
-            }                      
+            
+                ConnectorSQLite.CreateTable();
+                List<Producto> Productos = new List<Producto>();
+                SQLiteConnection conn = ConnectorSQLite.CreateConnection();
+                SQLiteCommand command;
+                SQLiteDataReader reader;
+                command = conn.CreateCommand();
+
+                command.CommandText = "select * from Producto";
+            try
+            {
+                reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Productos.Add(new Producto(
+                    reader.GetInt32(0),
+                    reader.GetString(1),
+                    reader.GetInt32(2),
+                    reader.GetBoolean(3),
+                    reader.GetString(4),
+                    reader.GetString(5),
+                    reader.GetInt32(6),
+                    reader.GetBoolean(7)
+                    ));
+
+                }
+            }
+            catch (SQLiteException e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.ToString());
+            }
             conn.Close();
             return Productos;
         }
