@@ -97,8 +97,8 @@ namespace Sistema_de_gestion_de_productos
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form3 Form3 = new Form3();
-            AbrirForm(Form3);
+            Form4 Form4 = new Form4();
+            AbrirForm(Form4);
             this.formMC.BackColor = Color.FromArgb(9, 56, 104);
             this.formMP.BackColor = Color.FromArgb(6, 37, 69);
             this.formLP.BackColor = Color.FromArgb(6, 37, 69);
