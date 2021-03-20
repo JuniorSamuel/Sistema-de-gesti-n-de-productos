@@ -17,8 +17,8 @@ namespace Sistema_de_gestion_de_productos
         public Form1()
         {
             InitializeComponent();
-
-
+            this.MaximumSize = SystemInformation.PrimaryMonitorMaximizedWindowSize;
+            this.Location = new Point(0, 0);
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -83,14 +83,15 @@ namespace Sistema_de_gestion_de_productos
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if (this.WindowState == FormWindowState.Maximized)
+            if (this.Size == SystemInformation.PrimaryMonitorMaximizedWindowSize)
             {
-                this.WindowState = FormWindowState.Normal;
-                this.StartPosition = FormStartPosition.CenterScreen;
+                this.Size = new Size(915, 565);
+                this.Location = new Point(250, 75);
             }
             else
             {
-                this.WindowState = FormWindowState.Maximized;
+                this.Size = SystemInformation.PrimaryMonitorMaximizedWindowSize;
+                this.Location = new Point(0, 0);
             }
         }
 
