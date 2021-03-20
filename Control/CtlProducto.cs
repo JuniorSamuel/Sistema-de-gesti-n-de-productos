@@ -87,8 +87,7 @@ namespace Sistema_de_gestion_de_productos.Control
                     string v = vistaPro.dataGridProducto.Rows[e.RowIndex].Cells[6].FormattedValue.ToString();                    
 
                     vistaPro.cbCategoria.Text = vistaPro.dataGridProducto.Rows[e.RowIndex].Cells[6].FormattedValue.ToString();
-                    
-                    MessageBox.Show(vistaPro.dataGridProducto.Rows[e.RowIndex].Cells[6].FormattedValue.ToString());
+                                        
                     if (vistaPro.dataGridProducto.Rows[e.RowIndex].Cells[7].FormattedValue.ToString() == "True")
                     {
                         vistaPro.cbEstado.SelectedIndex = 0;
