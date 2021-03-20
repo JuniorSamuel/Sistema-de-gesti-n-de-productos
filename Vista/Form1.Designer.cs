@@ -132,11 +132,18 @@ namespace Sistema_de_gestion_de_productos
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(119, 490);
+            this.button5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(56)))), ((int)(((byte)(104)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(0, 485);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.button5.Size = new System.Drawing.Size(200, 40);
             this.button5.TabIndex = 3;
-            this.button5.Text = "button5";
+            this.button5.Text = "Acerca de";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
